@@ -1,208 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet"href="portofolio css.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio Fazri</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="portofolio css.css">
+
 </head>
 <body>
-  <nav>
-    <div><strong>Portfolio Fazri</strong></div>
-    <ul>
-      <li><a href="#home" id="home-link" class="active navbar" onclick="activeLink('home-link')">Home</a></li>
-      <li><a href="#about" id="about-link" class="navbar" onclick="activeLink('about-link')">About</a></li>
-      <li><a href="#resume" id="resume-link" class="navbar" onclick="activeLink('resume-link')">Resume</a></li>
-      <li><a href="#portofolio" id="portofolio-link" class="navbar" onclick="activeLink('portofolio-link')">Portofolio</a></li>
-      <li><a href="#service" id="service-link" class="navbar" onclick="activeLink('service-link')">Service</a></li>
-      <li><a href="#contact" id="contact-link" class="navbar" onclick="activeLink('contact-link')">Contact</a></li>
-    </ul>
-  </nav>
 
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <p>Hello</p>
-      <h1>I'm <span> Muhammad Fazrillah</span></h1>
-      <p>Saya adalah seorang programmer pemula yang sedang belajar coding. Saya ingin menguasai HTML, CSS, dan JavaScript untuk membangun website yang menarik dan fungsional.</p>
-      <button class="btn" id="download-cv-btn">Download CV</button>
-      <div class="social-media">
-        <a href="https://www.instagram.com/fzrillahh_?igsh=cjU2ODg5eXhneGsw" target="_blank" class="sm-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@fazrillah" target="_blank" class="sm-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="zrillah.png" alt="fazri">
-    </div>
-  </section>
+<!-- ================= NAVBAR ================= -->
 
-  <section class="about" id="about">
-    <div class="about-container">
-        <h2>Tentang Saya</h2>
-        <p>halo!Nama saya Muhammad fazrillah. Saya adalah seorang programmer pemula yang sangat antusias belajar teknologi web. Saya memiliki minat besar pada pengembangan website,desain ui/ux,dan ingin terus berkembang di dunia coding. saat ini saya sedang fokus menguasai HTML,CSS,dan JavaScript agar bisa membuat website yang modern dan interaktif</p>
-        
-        <div class="about-skills">
-          <h3>Skill yang Dikuasai</h3>
-          <ul class="skills-list">
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-img" alt="HTML" title="HTML"> HTML</li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-img" alt="CSS" title="CSS"> CSS</li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-img" alt="JavaScript" title="JavaScript"> JavaScript</li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="skill-img" alt="Figma" title="Figma"> Figma</li>
-            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="skill-img" alt="C#" title="C#"> C#</li>
-          </ul>
-        </div>
-    </div> 
-  </section>
+<nav>
+  <div class="logo">
+    <strong>Portfolio Fazri</strong>
+  </div>
 
-  <section class="resume" id="resume">
-    <div class="resume-container">
-      <h2>Riwayat Pendidikan</h2>
-      <ul class="resume-list">
-        <li>
-          <strong>SMK Negeri 40 Jakarta</strong><br>
-          Jurusan Rekayasa Perangkat Lunak (RPL)<br>
-          2024 - sekarang
-        </li>
-        <li>
-          <strong>Mts.Jauharotun Naqiyah</strong><br>
-          2022 - 2024
-        </li>
-      </ul>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#portofolio">Portfolio</a></li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-      <h2>Pengalaman Magang / Freelance</h2>
-      <ul class="resume-list">
-        <li>
-          <strong>Magang di PT. WebDev Indonesia</strong><br>
-          Membantu pembuatan landing page dan website company profile.<br>
-          Jan 2025 - Mar 2025
-        </li>
-        <li>
-          <strong>Freelance - Jasa Desain UI Website</strong><br>
-          Membuat desain UI/UX untuk beberapa klien UMKM.<br>
-          2024 - sekarang
-        </li>
-      </ul>
+<!-- ================= HERO ================= -->
 
-      <h2>Sertifikasi &amp; Pelatihan</h2>
-      <ul class="resume-list">
-        <li>
-          <strong>Dicoding - Belajar Dasar Pemrograman Web</strong><br>
-          Sertifikat: <a href="#" target="_blank">Lihat Sertifikat</a>
-        </li>
-        <li>
-          <strong>Pelatihan UI/UX Design - Figma</strong><br>
-          Sertifikat: <a href="#" target="_blank">Lihat Sertifikat</a>
-        </li>
-      </ul>
-    </div>
-  </section>
+<section class="hero" id="home">
 
-  <section class="projects" id="portofolio">
-    <div class="projects-container">
-      <h2>Galeri Projek</h2>
-      <div class="project-list">
-        <div class="project-card">
-          <img src="proyek codingan musik.png" alt="Playlist Musik" class="project-img">
-          <h3>Playlist Musik</h3>
-          <p>Aplikasi web sederhana untuk memutar musik favorit secara online.</p>
-          <div class="project-tech">
-            <span>HTML</span> <span>CSS</span>
-            <a href="http://127.0.0.1:5500/latihan%20html/palylist%20musik.html" musik target="_blank" class="view-btn">Lihat</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="hasil projek.png" alt="Portofolio" class="project-img">
-          <h3>Portofolio Pribadi</h3>
-          <p>Website portofolio untuk menampilkan skill, karya, dan kontak saya.</p>
-          <div class="project-tech">
-            <span>HTML</span> <span>CSS</span>
-            <a href="http://127.0.0.1:5500/prtofolio/portofolio2.html" portofolio target="_blank" class="view-btn">Lihat</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="latihan dasar html.png" alt="Latihan HTML" class="project-img">
-          <h3>Latihan HTML &amp; CSS</h3>
-          <p>Kumpulan latihan dasar HTML dan CSS untuk pemula.</p>
-          <div class="project-tech">
-            <span>HTML</span> <span>CSS</span>
-            <a href="http://127.0.0.1:5500/latihan%20html/praktek3.html" latihan html target="_blank" class="view-btn">Lihat</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="hero-text">
 
-  <section class="services" id="service">
-    <div class="services-container">
-      <h2>Layanan Saya</h2>
-      <div class="service-list">
-        <div class="service-card">
-          <i class="fas fa-code service-icon"></i>
-          <h3>Web Development</h3>
-          <p>Membangun website responsif dan fungsional menggunakan HTML, CSS, dan JavaScript.</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-paint-brush service-icon"></i>
-          <h3>UI/UX Design</h3>
-          <p>Mendesain antarmuka pengguna yang menarik dan mudah digunakan dengan Figma.</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-mobile-alt service-icon"></i>
-          <h3>Responsive Design</h3>
-          <p>Membuat desain website yang optimal untuk berbagai perangkat, termasuk mobile.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<p>Hi, it's</p>
 
-  <section class="contact" id="contact">
-    <div class="contact-container">
-      <h2>Hubungi Saya</h2>
-      <p>Jika Anda tertarik bekerja sama atau memiliki pertanyaan, jangan ragu untuk menghubungi saya!</p>
-      <form class="contact-form">
-        <input type="text" placeholder="Nama Anda" required>
-        <input type="email" placeholder="Email Anda" required>
-        <textarea placeholder="Pesan Anda" required></textarea>
-        <button type="submit" class="btn">Kirim Pesan</button>
-      </form>
-    </div>
+<h1>I'm <span id="changing-text"></span></h1>
 
-    <div class="contact-info">
-      <p><strong>Email:</strong> zrillah@gmail.com</p>
-      <p><strong>Whatsapp:</strong> <a href="https://wa.me/089528128238" target="_blank">089528128238</a></p>
-      <p><strong>Sosial Media:</strong></p>
-      <div class="social-media">
-        <a href="https://www.instagram.com/fzrillahh_?igsh=cjU2ODg5eXhneGsw" target="_blank" class="sm-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@zrii_34" target="_blank" class="sm-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
-      </div>
-    </div>
-  </section>
+<p>
+Saya adalah seorang programmer pemula yang sedang belajar coding.
+Saya ingin menguasai HTML, CSS, dan JavaScript untuk membangun website
+yang menarik dan fungsional.
+</p>
 
-  <footer>
-    <div class="footer-container">
-      <p>Hak Cipta &copy; 2025 Muhammad Fazrillah. All Rights Reserved.</p>
-    </div>
+<button class="btn" id="download-cv-btn">
+Download CV
+</button>
 
-    <div class="footer-nav">
-      <a href="#home">Home</a>
-      <a href="#portofolio">portofolio</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </footer>
+<div class="social-media">
 
-  <script>
-    // Alert saat tombol Download CV diklik
-    document.getElementById('download-cv-btn').addEventListener('click', function() {
-      alert('Terima kasih telah mengunduh CV saya!');
-    });
+<a href="https://www.instagram.com/fzrillahh_?igsh=cjU2ODg5eXhneGsw" target="_blank" class="sm-icon">
+<i class="fab fa-instagram"></i>
+</a>
 
-    // Alert saat form kontak dikirim
-    document.querySelector('.contact-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // mencegah form submit default agar alert muncul dulu
-      alert('Pesan Anda telah terkirim. Terima kasih!');
-      this.reset(); // reset form setelah submit
-    });
-  </script>
+<a href="https://www.tiktok.com/@fazrillah" target="_blank" class="sm-icon">
+<i class="fab fa-tiktok"></i>
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-img">
+<img src="fazri (2).jpeg" alt="Fazri">
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="about-container">
+
+<h2>Tentang Saya</h2>
+
+<p>
+Halo! Nama saya Muhammad Fazrillah.
+Saya adalah seorang programmer pemula yang sangat antusias belajar teknologi web.
+Saya memiliki minat besar pada pengembangan website dan desain UI/UX.
+Saat ini saya sedang fokus menguasai HTML, CSS, dan JavaScript agar
+bisa membuat website yang modern dan interaktif.
+</p>
+
+<h3>Skill yang Dikuasai</h3>
+
+<ul class="skills-list">
+
+<li>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-img">
+HTML
+</li>
+
+<li>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-img">
+CSS
+</li>
+
+<li>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-img">
+JavaScript
+</li>
+
+<li>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="skill-img">
+Figma
+</li>
+
+<li>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="skill-img">
+C#
+</li>
+
+<li>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="skill-img">
+PHP
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- ================= RESUME ================= -->
+
+<section id="resume">
+
+<div class="resume-container">
+
+<h2>Riwayat Pendidikan</h2>
+
+<ul class="resume-list">
+
+<li>
+<strong>SMK Negeri 40 Jakarta</strong><br>
+Jurusan Rekayasa Perangkat Lunak (RPL)<br>
+2024 - 2027
+</li>
+
+<li>
+<strong>MTS Jauharotun Naqiyah</strong><br>
+2022 - 2024
+</li>
+
+<li>
+  <strong>Sdn Kayumanis 02</strong><br>
+  2014-2020
+</li>
+
+</ul>
+
+<h2>Pengalaman</h2>
+
+<ul class="resume-list">
+
+<li>
+<strong>Website Portfolio</strong><br>
+Membuat website portfolio menggunakan HTML, CSS, JavaScript dan WordPress
+</li>
+
+<li>
+<strong>Website Perpustakaan Digital</strong><br>
+Membuat website perpustakaan menggunakan PHP dan MySQL
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECT ================= -->
+
+<section id="portofolio">
+
+<div class="projects-container">
+
+<h2>Galeri Project</h2>
+
+<div class="project-list">
+
+<div class="project-card">
+
+<img src="figma kalender.png" class="project-img">
+
+<h3>kalender figma</h3>
+
+<p>website kalender sekolah sederhana</p>
+
+<div class="project-tech">
+
+<span>figma</span>
+</div>
+
+</div>
+
+<div class="project-card">
+
+<img src="portofolio pribadi.png" class="project-img">
+
+<h3>Portfolio Website</h3>
+
+<p>Website portfolio untuk menampilkan skill dan project.</p>
+
+<div class="project-tech">
+
+<span>HTML</span>
+<span>CSS</span>
+<span>JS</span>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<img src="perpustakaan digital.png" class="project-img">
+
+<h3>Website perpustakaan digital</h3>
+
+<p>sebuah website perpustakaan digital</p>
+
+<div class="project-tech">
+
+<span>PHP</span>
+<span>MYSQL/DATABASE</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section id="service">
+
+<h2>Layanan Saya</h2>
+
+<div class="service-list">
+
+<div class="service-card">
+
+<i class="fas fa-code service-icon"></i>
+
+<h3>Web Development</h3>
+
+<p>Membangun website responsif menggunakan HTML, CSS, dan JavaScript.</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fas fa-paint-brush service-icon"></i>
+
+<h3>UI / UX Design</h3>
+
+<p>Mendesain tampilan website menggunakan Figma.</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fas fa-mobile-alt service-icon"></i>
+
+<h3>Responsive Design</h3>
+
+<p>Membuat website yang optimal di mobile dan desktop.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2>Hubungi Saya</h2>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Nama Anda" required>
+
+<input type="email" placeholder="Email Anda" required>
+
+<textarea placeholder="Pesan Anda" required></textarea>
+
+<button type="submit" class="btn">
+Kirim Pesan
+</button>
+
+</form>
+
+<div class="contact-info">
+
+<p><strong>Email:</strong> zrillah@gmail.com</p>
+
+<p>
+<strong>Whatsapp:</strong>
+<a href="https://wa.me/6289528128238">089528128238</a>
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>© 2025 Muhammad Fazrillah</p>
+
+<div class="footer-nav">
+
+<a href="#home">Home</a>
+<a href="#portofolio">Portfolio</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+document.getElementById("download-cv-btn").onclick = () => {
+alert("Terima kasih telah mengunduh CV saya!");
+};
+
+document.querySelector(".contact-form").addEventListener("submit",function(e){
+e.preventDefault();
+alert("Pesan berhasil dikirim!");
+this.reset();
+});
+
+const texts=[
+"Muhammad Fazrillah",
+"Web Developer",
+"UI/UX Designer",
+"Frontend Developer"
+];
+
+let index=0;
+let charIndex=0;
+
+const element=document.getElementById("changing-text");
+
+function typeEffect(){
+
+if(charIndex < texts[index].length){
+
+element.textContent+=texts[index].charAt(charIndex);
+
+charIndex++;
+
+setTimeout(typeEffect,100);
+
+}else{
+
+setTimeout(eraseEffect,1500);
+
+}
+
+}
+
+function eraseEffect(){
+
+if(charIndex>0){
+
+element.textContent=texts[index].substring(0,charIndex-1);
+
+charIndex--;
+
+setTimeout(eraseEffect,50);
+
+}else{
+
+index++;
+
+if(index>=texts.length) index=0;
+
+setTimeout(typeEffect,200);
+
+}
+
+}
+
+document.addEventListener("DOMContentLoaded",typeEffect);
+
+</script>
+
 </body>
 </html>
